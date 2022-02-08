@@ -1,0 +1,105 @@
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+
+body {
+    width: 370px;
+}
+
+form {
+    text-align: center;
+    margin: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/*! INPUT */
+
+
+input[type="text"] {
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+:focus {
+    outline: none;
+}
+
+.wrap {
+    float: left;
+    min-width: 15%;
+    position: relative;
+    width: 300px;
+}
+
+.input-effect {
+    border: 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.input-effect ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: 0.4s;
+}
+
+.input-effect:focus ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+
+
+
+
+/*! BUTTON */
+
+button {
+    cursor: pointer;
+    width: 75px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    padding: 5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    border-radius: 5px;
+}
+  
+button:hover {
+    background: #fff;
+    color: #000;
+}
+  
+button:after {
+    content: "";
+    background: black;
+    color: white;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.8s;
+}
+  
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}

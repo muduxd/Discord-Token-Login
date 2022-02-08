@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Discord Token Login",
+    "description": "Discord login based on token",
+    "version": "1.0.0",
+
+    "icons": {
+      "128": "icons/discord.png"
+    },
+  
+    "permissions": [
+      "tabs", "<all_urls>", "storage"
+    ],
+
+    "browser_action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "64": "icons/discord.png"
+      }
+    }
+}
